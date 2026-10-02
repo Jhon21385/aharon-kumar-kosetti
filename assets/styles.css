@@ -309,13 +309,6 @@ html[data-theme="light"] .tag-gold { color: #92400e; }
 .socials svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .socials svg.fill { fill: currentColor; stroke: none; }
 
-/* ---------- Under card ---------- */
-.under {
-  margin-top: 16px; text-align: center; font-size: 12.4px; color: var(--muted);
-}
-.under a { border-bottom: 1px solid var(--border-strong); }
-.under a:hover { color: var(--text); }
-
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
   body { padding: 22px 12px; }
@@ -348,6 +341,40 @@ html[data-theme="light"] .tag-gold { color: #92400e; }
 @media (max-width: 420px) {
   .role { font-size: 14px; }
   .stats strong { font-size: 1.3rem; }
+}
+
+/* ---------- Compact mode on short viewports (laptop screens) ---------- */
+@media (min-width: 641px) and (max-height: 950px) {
+  body { padding: 14px 16px; }
+  .card { padding: 17px 22px 12px; border-radius: 22px; }
+  .avatar, .avatar img, .avatar-fallback { width: 60px; height: 60px; border-radius: 17px; }
+  .avatar { border-radius: 19px; }
+  .avatar-fallback { font-size: 20px; }
+  .ident h1 { font-size: 1.35rem; }
+  .ident { gap: 14px; padding-right: 44px; }
+  .role { margin-top: 4px; font-size: 14px; }
+  .where { margin-top: 4px; font-size: 12.8px; }
+  .pill { margin-top: 8px; padding: 5px 12px 5px 10px; font-size: 12.1px; }
+  .bio { margin-top: 12px; padding-top: 11px; font-size: 13.6px; }
+  .stats { margin-top: 11px; gap: 7px; }
+  .stats li { padding: 8px 11px; }
+  .stats strong { font-size: 1.14rem; }
+  .stats li > span { font-size: 11.4px; }
+  .chips { margin-top: 10px; gap: 6px; }
+  .chips li { padding: 4px 10px; font-size: 11.9px; }
+  .repos { margin-top: 13px; padding-top: 11px; }
+  .repos-head { margin-bottom: 8px; }
+  .repo-list { gap: 7px; }
+  .repo { padding: 8px 11px; gap: 11px; }
+  .repo-icon { width: 32px; height: 32px; border-radius: 10px; font-size: 15px; }
+  .repo-icon svg { width: 17px; height: 17px; }
+  .repo-title a { font-size: 14.6px; }
+  .repo-desc { font-size: 12.6px; }
+  .mini { width: 30px; height: 30px; border-radius: 9px; }
+  .mini svg { width: 15px; height: 15px; }
+  .card-foot { margin-top: 12px; padding-top: 10px; }
+  .socials a { width: 32px; height: 32px; border-radius: 10px; }
+  .socials svg { width: 16px; height: 16px; }
 }
 
 /* ---------- Motion / print ---------- */
